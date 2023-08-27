@@ -16,26 +16,6 @@
 
   gtag('config', 'G-49H3ZC5GZR');
 </script>
-<script>
-// Remplacez 'VOTRE_CLÉ_API' par votre clé API réelle
-const apiKey = 'e774713b1dd36229a4887e3a96afaa50';
-const ipAddress = 'check'; // Vous pouvez utiliser 'check' pour obtenir l'IP de l'utilisateur
-
-// Endpoint de l'API ipstack
-const apiUrl = `http://api.ipstack.com/${ipAddress}?access_key=${apiKey}`;
-
-// Appel de l'API
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    // Traitement des données reçues depuis l'API
-    console.log(data);
-    // Vous pouvez accéder aux informations dans 'data' (par exemple: data.country_name, data.city, etc.)
-  })
-  .catch(error => {
-    console.error('Une erreur est survenue lors de l\'appel à l\'API', error);
-  });
-</script>
  </head>  
   <body>  
   <div class="container">  
